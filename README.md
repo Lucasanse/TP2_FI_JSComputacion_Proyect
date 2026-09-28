@@ -11,6 +11,7 @@ El objetivo es investigar, elegir y adaptar un **Sistema de Gestión de Contenid
 2. [Dominio: JS Computación](#dominio-js-computación)
 3. [Consigna](#consigna)
 4. [Hosting](#hosting)
+5. [Estructura](#Estructura)
 
 
 ---
@@ -26,7 +27,7 @@ El objetivo es investigar, elegir y adaptar un **Sistema de Gestión de Contenid
 
 **Docentes:** Marcos Cruz · Jorge Navarro · Lara Acuña Bravo
 
-**Tablero de trabajo (Kanban):** _link al tablero compartido con los docentes_
+**Tablero de trabajo (Kanban):** [_link al tablero compartido con los docentes_](https://github.com/users/Lucasanse/projects/6)
 
 ---
 
@@ -57,7 +58,7 @@ El sistema busca digitalizar y centralizar el proceso comercial del negocio, des
 
 ### Pautas de trabajo
 
-1. **Tablero colaborativo Kanban** GitHub Projects https://github.com/users/Lucasanse/projects/6).
+1. **Tablero colaborativo Kanban** GitHub Projects.
 2. **Trabajo en equipo con git**: el repositorio se comparte con la cátedra y debe reflejar las decisiones tomadas durante el desarrollo (documentación de los cambios).
    - Las ramas permiten desarrollar partes del proyecto en paralelo, sin pisarse.
 
@@ -85,3 +86,40 @@ El sitio en WordPress se aloja en **[InfinityFree](https://www.infinityfree.com/
 - **URL del sitio:** https://jscomputacion.infinityfree.io/
 
 ---
+
+## Estructura
+
+```
+.
+├── README.md                    # Presentación del proyecto, stack, forma de trabajo
+├── docs/
+│   ├── decisiones.md            # Registro de decisiones (fecha, decisión, alternativas, motivo)
+│   ├── informe/
+│   │   └── TP2_Informe.pdf       # Informe final (máx. 20 páginas)
+│   ├── presentacion/
+│   │   └── TP2_presentacion.pptx      # Diapositivas de la exposición
+│   ├── capturas/
+│   │   ├── original/            # Template sin modificar (el "antes")
+│   │   │   ├── home-escritorio.png
+│   │   │   └── home-movil.png
+│   │   └── modificado/          # Template personalizado (el "después")
+│   └── modulos/                 # Un archivo por módulo
+│       ├── 01-catalogo.md
+│       ├── 02-servicio-tecnico.md
+│       └── 03-gestion-pedidos.md
+└── src/                         # Código (se suma cuando haya)
+    ├── wordpress/               # Tema hijo, plugins propios o exportación del sitio
+    ├── frontend/                # React + Tailwind (proyecto final)
+    └── backend/                 # Node.js + Express + Prisma (proyecto final)
+```
+
+| Carpeta / archivo | Contenido |
+|-------------------|-----------|
+| `docs/decisiones.md` | Una fila por cada decisión tomada (herramienta, plugin, cambio de diseño). |
+| `docs/informe/` | Informe final del TP (máx. 20 páginas). |
+| `docs/presentacion/` | Diapositivas de la exposición oral. |
+| `docs/capturas/original/` | Capturas del template sin modificar. |
+| `docs/capturas/modificado/` | Capturas del template personalizado, con el mismo nombre que su "antes" para compararlas. |
+| `docs/modulos/` | Qué hace cada módulo, plugins o librerías que usa, configuración y capturas. |
+| `src/wordpress/` | Tema hijo y plugins propios si se modifica código, o exportación del sitio. |
+| `src/frontend/` y `src/backend/` | Código del proyecto final (React + Express). |
