@@ -2,11 +2,9 @@
 
 Cada vez que el equipo toma una decisión (herramienta, plugin, cambio de diseño) se agrega una fila.
 
-| Fecha | Decisión | Alternativas consideradas | Motivo |
-|-------|----------|---------------------------|--------|
-| 2026-09 | CMS: WordPress | Wix | Escalabilidad, código abierto, costo a largo plazo, plugins para Mercado Pago |
-| 2026-09 | Frontend: React + Tailwind CSS | Preact | Ecosistema (ruteo, estado, formularios), experiencia previa, demanda laboral |
-| 2026-09 | Backend: Express | Fastify, NestJS | Experiencia previa, documentación con Prisma y PostgreSQL, tráfico de un comercio local |
-| 2026-09 | Base de datos: PostgreSQL + Prisma | — | Integración con Node.js y Express |
-| 2026-09 | Hosting: InfinityFree | — | Plan gratuito para WordPress |
-| 2026-09 | No usar Elementor | Elementor | La versión gratuita está orientada a sitios simples; las herramientas pagas encarecen el proyecto |
+| Fecha | Decisión | Motivo |
+|-------|----------|--------|
+| 24/09/26 | CMS: WordPress | Se eligió en lugar de Wix porque escala mejor, es de código abierto, cuesta menos a largo plazo y tiene plugins para Mercado Pago |
+| 24/09/26 | Frontend: React + Tailwind CSS | Se eligió en lugar de Preact porque tiene un ecosistema más completo (ruteo, estado, formularios), el equipo ya lo conoce y tiene más demanda laboral |
+| 24/09/26 | Backend: Express | Se eligió en lugar de Fastify y NestJS porque el equipo ya lo conoce, hay buena documentación para usarlo con Prisma y PostgreSQL, y alcanza para el tráfico de un comercio local |
+| 24/09/26 | Hosting: InfinityFree | Tiene un plan gratuito para WordPress y podemos trabajar en equipo sobre un mismo proyecto |
