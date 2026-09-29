@@ -113,10 +113,9 @@ El sitio en WordPress se aloja en **[InfinityFree](https://www.infinityfree.com/
 | Carpeta / archivo | Contenido |
 |-------------------|-----------|
 | `docs/decisiones.md` | Una fila por cada decisión tomada (herramienta, plugin, cambio de diseño). |
-| `docs/informe/` | Informe final del TP (máx. 20 páginas). |
+| `docs/informe/` | Informe final del TP |
 | `docs/presentacion/` | Diapositivas de la exposición oral. |
 | `docs/capturas/original/` | Capturas del template sin modificar. |
 | `docs/capturas/modificado/` | Capturas del template personalizado, con el mismo nombre que su "antes" para compararlas. |
-| `docs/modulos/` | Qué hace cada módulo, plugins o librerías que usa, configuración y capturas. |
 | `src/wordpress/` | Tema hijo y plugins propios si se modifica código, o exportación del sitio. |
-| `src/frontend/` y `src/backend/` | Código del proyecto final (React + Express). |
+| `src/frontend/` | Código del proyecto final (React + Express). |
