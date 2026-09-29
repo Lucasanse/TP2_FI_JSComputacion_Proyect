@@ -93,7 +93,7 @@ El sitio en WordPress se aloja en **[InfinityFree](https://www.infinityfree.com/
 .
 ├── README.md                    # Presentación del proyecto, stack, forma de trabajo
 ├── docs/
-│   ├── decisiones.md            # Registro de decisiones (fecha, decisión, alternativas, motivo)
+│   ├── decisiones.md            # Registro de decisiones (nro, fecha, decisión, motivo)
 │   ├── informe/
 │   │   └── TP2_Informe.pdf       # Informe final (máx. 20 páginas)
 │   ├── presentacion/
