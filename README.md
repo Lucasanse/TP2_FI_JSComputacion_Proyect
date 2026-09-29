@@ -99,14 +99,11 @@ El sitio en WordPress se aloja en **[InfinityFree](https://www.infinityfree.com/
 │   ├── presentacion/
 │   │   └── TP2_presentacion.pptx      # Diapositivas de la exposición
 │   ├── capturas/
-│   │   ├── original/            # Template sin modificar (el "antes")
-│   │   │   ├── home-escritorio.png
-│   │   │   └── home-movil.png
-│   │   └── modificado/          # Template personalizado (el "después")
-│   └── modulos/                 # Un archivo por módulo
-│       ├── 01-catalogo.md
-│       ├── 02-servicio-tecnico.md
-│       └── 03-gestion-pedidos.md
+│       ├── original/            # Template sin modificar (el "antes")
+│       │   ├── home-escritorio.png
+│       │   └── home-movil.png
+│       └── modificado/          # Template personalizado (el "después")
+│              
 └── src/                         # Código (se suma cuando haya)
     ├── wordpress/               # Tema hijo, plugins propios o exportación del sitio
     ├── frontend/                # React + Tailwind (proyecto final)
