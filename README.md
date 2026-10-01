@@ -12,6 +12,7 @@ El objetivo es investigar, elegir y adaptar un **Sistema de Gestión de Contenid
 3. [Consigna](#consigna)
 4. [Hosting](#hosting)
 5. [Estructura](#Estructura)
+6. [Cómo correr el frontend estático](#cómo-correr-el-frontend-estático)
 
 
 ---
@@ -119,3 +120,28 @@ El sitio en WordPress se aloja en **[InfinityFree](https://www.infinityfree.com/
 | `docs/capturas/modificado/` | Capturas del template personalizado, con el mismo nombre que su "antes" para compararlas. |
 | `src/wordpress/` | Tema hijo y plugins propios si se modifica código, o exportación del sitio. |
 | `src/frontend/` | Código del proyecto final (React + Express). |
+
+---
+
+## Cómo correr el frontend estático
+
+En `src/frontend/` está el frontend del Trabajo Final (React + Vite + Tailwind CSS) adaptado a una versión **estática**. Los productos están en un archivo local (`src/data/productos.ts`), así que no hace falta levantar el backend ni la base de datos. Incluye las páginas **Inicio**, **Productos** (con buscador y filtros) y **Login**.
+
+**Requisito:** tener instalado [Node.js](https://nodejs.org/) 20 o superior.
+
+1. Entrar a la carpeta del frontend:
+   ```bash
+   cd src/frontend
+   ```
+2. Instalar las dependencias (solo la primera vez):
+   ```bash
+   npm install
+   ```
+3. Levantar el servidor de desarrollo:
+   ```bash
+   npm run dev
+   ```
+4. Abrir en el navegador la URL que muestra la consola (por defecto http://localhost:5173).
+5. Para detenerlo, presionar `Ctrl + C` en la terminal.
+
+**Versión compilada (opcional):** `npm run build` genera la carpeta `dist/`, que se puede subir a cualquier hosting estático. Con `npm run preview` se prueba localmente.
