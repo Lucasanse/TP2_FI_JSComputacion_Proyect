@@ -123,7 +123,7 @@ El sitio en WordPress se aloja en **[InfinityFree](https://www.infinityfree.com/
 
 ---
 
-## Cómo correr el frontend estático
+## Cómo correr el frontend estático (React)
 
 En `src/frontend/` está el frontend del Trabajo Final (React + Vite + Tailwind CSS) adaptado a una versión **estática**. Los productos están en un archivo local (`src/data/productos.ts`), así que no hace falta levantar el backend ni la base de datos. Incluye las páginas **Inicio**, **Productos** (con buscador y filtros) y **Login**.
 
