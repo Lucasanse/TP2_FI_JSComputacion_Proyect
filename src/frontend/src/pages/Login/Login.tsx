@@ -10,7 +10,7 @@ export default function Login() {
   };
 
   return (
-    <section className="flex min-h-screen items-center justify-center bg-surface-alt px-4">
+    <section className="flex flex-1 items-center justify-center bg-surface-alt px-4 py-10">
       <div className="w-full max-w-md rounded-xl border border-line bg-surface shadow-lg p-8">
         <h1 className="text-3xl font-bold text-primary text-center">
           Iniciar sesión
@@ -45,6 +45,15 @@ export default function Login() {
                          focus:outline-none focus:ring-2 focus:ring-primary-light"
             />
           </div>
+
+          <label className="flex items-center gap-2 text-sm text-ink cursor-pointer select-none">
+            <input
+              type="checkbox"
+              name="recuerdame"
+              className="h-4 w-4 rounded border-line accent-primary"
+            />
+            Recuérdame
+          </label>
 
           <button
             type="submit"

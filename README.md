@@ -97,14 +97,8 @@ El sitio en WordPress se aloja en **[InfinityFree](https://www.infinityfree.com/
 │   ├── decisiones.md            # Registro de decisiones (nro, fecha, decisión, motivo)
 │   ├── informe/
 │   │   └── TP2_Informe.pdf       # Informe final (máx. 20 páginas)
-│   ├── presentacion/
-│   │   └── TP2_presentacion.pptx      # Diapositivas de la exposición
-│   ├── capturas/
-│       ├── original/            # Template sin modificar (el "antes")
-│       │   ├── home-escritorio.png
-│       │   └── home-movil.png
-│       └── modificado/          # Template personalizado (el "después")
-│              
+│   └── presentacion/
+│       └── TP2_presentacion.pptx      # Diapositivas de la exposición
 └── src/                         # Código (se suma cuando haya)
     ├── wordpress/               # Tema hijo, plugins propios o exportación del sitio
     ├── frontend/                # React + Tailwind (proyecto final)
@@ -116,8 +110,6 @@ El sitio en WordPress se aloja en **[InfinityFree](https://www.infinityfree.com/
 | `docs/decisiones.md` | Una fila por cada decisión tomada (herramienta, plugin, cambio de diseño). |
 | `docs/informe/` | Informe final del TP |
 | `docs/presentacion/` | Diapositivas de la exposición oral. |
-| `docs/capturas/original/` | Capturas del template sin modificar. |
-| `docs/capturas/modificado/` | Capturas del template personalizado, con el mismo nombre que su "antes" para compararlas. |
 | `src/wordpress/` | Tema hijo y plugins propios si se modifica código, o exportación del sitio. |
 | `src/frontend/` | Código del proyecto final (React + Express). |
 

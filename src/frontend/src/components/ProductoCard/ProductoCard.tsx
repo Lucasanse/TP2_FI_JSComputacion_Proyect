@@ -25,7 +25,7 @@ export default function ProductoCard({ producto, esFavorito, onToggleFavorito }:
   };
 
   return (
-    <article className="relative flex flex-col gap-3 rounded-xl border border-line bg-surface p-3 shadow-sm transition duration-200 hover:z-20 hover:scale-105 hover:shadow-lg">
+    <article className="relative flex flex-col gap-2 rounded-xl border border-line bg-surface p-2 shadow-sm sm:gap-3 sm:p-3 transition duration-200 hover:z-20 hover:scale-105 hover:shadow-lg">
       <div className="relative flex aspect-square items-center justify-center overflow-hidden rounded-lg bg-surface">
         <img
           src={producto.imagenUrl}
@@ -38,21 +38,21 @@ export default function ProductoCard({ producto, esFavorito, onToggleFavorito }:
           aria-label={esFavorito ? "Quitar de favoritos" : "Agregar a favoritos"}
           aria-pressed={esFavorito}
           onClick={() => onToggleFavorito(producto.id)}
-          className={`absolute right-1.5 top-1.5 z-10 flex h-8 w-8 cursor-pointer items-center justify-center rounded-full bg-surface/90 shadow-sm transition-colors ${esFavorito ? "text-primary" : "text-muted hover:text-primary"}`}
+          className={`absolute right-1.5 top-1.5 z-10 flex h-7 w-7 cursor-pointer items-center justify-center rounded-full sm:h-8 sm:w-8 bg-surface/90 shadow-sm transition-colors ${esFavorito ? "text-primary" : "text-muted hover:text-primary"}`}
         >
           <HeartIcon filled={esFavorito} />
         </button>
       </div>
 
       <div>
-        <p className="text-xs font-medium uppercase tracking-wide text-muted">{producto.marca}</p>
-        <h3 className="line-clamp-2 text-sm font-bold leading-snug text-ink">{producto.nombre}</h3>
+        <p className="text-[10px] font-medium uppercase tracking-wide text-muted sm:text-xs">{producto.marca}</p>
+        <h3 className="line-clamp-2 text-xs font-bold leading-snug text-ink sm:text-sm">{producto.nombre}</h3>
       </div>
 
-      <p className="mt-auto text-xl font-semibold text-ink">{formatoPrecio.format(producto.precio)}</p>
+      <p className="mt-auto text-base font-semibold text-ink sm:text-xl">{formatoPrecio.format(producto.precio)}</p>
 
-      <div className="relative z-10 flex items-center gap-2">
-        <div className="flex h-9 items-center rounded-lg border border-line bg-surface">
+      <div className="relative z-10 flex flex-col gap-2 sm:flex-row sm:items-center">
+        <div className="flex h-8 items-center justify-between rounded-lg border border-line bg-surface sm:h-9 sm:justify-start">
           <button
             type="button"
             aria-label="Restar uno"
@@ -86,7 +86,7 @@ export default function ProductoCard({ producto, esFavorito, onToggleFavorito }:
         <button
           type="button"
           disabled={sinStock}
-          className="flex h-9 flex-1 cursor-pointer items-center justify-center gap-1.5 whitespace-nowrap rounded-lg bg-primary px-2 text-sm font-semibold text-white transition-colors hover:bg-primary-dark disabled:cursor-not-allowed disabled:bg-line disabled:text-muted"
+          className="flex h-8 w-full cursor-pointer items-center sm:h-9 sm:w-auto sm:flex-1 justify-center gap-1.5 whitespace-nowrap rounded-lg bg-primary px-2 text-sm font-semibold text-white transition-colors hover:bg-primary-dark disabled:cursor-not-allowed disabled:bg-line disabled:text-muted"
         >
           <CartIcon />
           {sinStock ? "Sin stock" : "Agregar"}

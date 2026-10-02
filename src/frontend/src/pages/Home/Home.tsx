@@ -24,8 +24,8 @@ const SERVICIOS = [
 export default function Home() {
   // Favoritos solo en memoria (versión estática)
   const [favoritos, setFavoritos] = useState<Set<number>>(new Set());
-  // Se sortean al entrar al inicio y con el botón "Mostrar otros"
-  const [destacados, setDestacados] = useState(productosAlAzar);
+  // Se sortean una vez al entrar al inicio
+  const [destacados] = useState(productosAlAzar);
 
   const toggleFavorito = (id: number) => {
     setFavoritos((prev) => {
@@ -83,19 +83,12 @@ export default function Home() {
           <div className="flex flex-wrap items-center justify-between gap-4">
             <h2 className="text-2xl font-bold text-primary">Productos destacados</h2>
             <div className="flex shrink-0 items-center gap-4">
-              <button
-                type="button"
-                onClick={() => setDestacados(productosAlAzar())}
-                className="cursor-pointer rounded-lg border border-line px-3 py-1.5 text-sm font-semibold text-ink transition hover:border-primary hover:text-primary"
-              >
-                🔀 Mostrar otros
-              </button>
               <Link to="/productos" className="text-sm font-semibold text-secondary-dark hover:underline">
                 Ver todos →
               </Link>
             </div>
           </div>
-          <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+          <div className="mt-6 grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
             {destacados.map((p) => (
               <ProductoCard
                 key={p.id}
