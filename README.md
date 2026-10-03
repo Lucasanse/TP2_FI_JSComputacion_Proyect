@@ -101,8 +101,7 @@ El sitio en WordPress se aloja en **[InfinityFree](https://www.infinityfree.com/
 │       └── TP2_presentacion.pptx      # Diapositivas de la exposición
 └── src/                         # Código (se suma cuando haya)
     ├── wordpress/               # Tema hijo, plugins propios o exportación del sitio
-    ├── frontend/                # React + Tailwind (proyecto final)
-    └── backend/                 # Node.js + Express + Prisma (proyecto final)
+    └── frontend/                # React + Tailwind (proyecto final)
 ```
 
 | Carpeta / archivo | Contenido |
